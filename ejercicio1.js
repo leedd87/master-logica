@@ -21,15 +21,17 @@ Como hacerlo:
 
 */
 
-let title = '# Tabla del 5 #'
 
 function tablaMultiplicar(numero) {
-    console.log(title)
+    let resultado = '# Tabla del 5 # \n'
     for (let i = 1; i <= 10; i++) {
-        let resultado = i * numero
-        console.log(`${i} x ${numero} = ${resultado}`)
+        let multiplicacion = i * numero
+        //console.log(`${i} x ${numero} = ${resultado}`)
+        resultado += `${i} x ${numero} = ${multiplicacion}\n`
+
     }
+    return resultado
 }
 
 
-tablaMultiplicar(5)
+console.log(tablaMultiplicar(5))
