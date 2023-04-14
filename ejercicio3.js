@@ -9,9 +9,56 @@ coincidencias('hola soy una palabra en una frase, PALABRA', 'palabra') // Devuel
 coincidencias('soy la frase','victor') // Devuelve 0
 
 Como hacerlo:
--Funcion con parametro 'texto'
--Separar el texto en un array de letras
--Darle la vuelta
--Unir el array de letras en un string y comparar con el parametro
+-Funcion con parametro dos parametros 'frase' y 'busqueda'
+-Poner string en minusculas y limpiarlo
+-Comprobar si la busqueda esta incluida en la frase
+-Crear un array de palabras de la frase
+-Mapear esas palabras y hacer un contador de cada una
+-Devolver el contador de la busqueda
 
 */
+
+let frase = 'hola soy una palabra en una frase, PALABRA, palabra';
+let word = 'palabra';
+
+// frase = frase.toLowerCase()
+// frase = frase.split(' ')
+// console.log(frase)
+//frase = frase.includes(word) //true
+
+// if (frase.includes(word)) {
+//     console.log('incluido')
+//     frase.map(element => {
+//         element.includes('palabra')
+//         console.log(element)
+//         return element
+//     })
+// }
+
+function coincidencias(frase, busqueda) {
+    let texto_limpio = frase.toLowerCase().replace(/[!,.-]/gi, '')
+    let resultado = 0
+
+    if (texto_limpio.includes(busqueda)) {
+        let palabras = texto_limpio.split(' ')
+
+        let mapa = {};
+
+        for (let palabra of palabras) {
+            if (mapa[palabra]) {
+                mapa[palabra]++
+
+            } else {
+                mapa[palabra] = 1
+            }
+        }
+        resultado = mapa[busqueda]
+
+    } else {
+        resultado = 0
+    }
+    return resultado
+}
+
+console.log(coincidencias(frase, word))
+
