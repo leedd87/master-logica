@@ -19,21 +19,7 @@ Como hacerlo:
 */
 
 let frase = 'hola soy una palabra en una frase, PALABRA, palabra';
-let word = 'palabra';
-
-// frase = frase.toLowerCase()
-// frase = frase.split(' ')
-// console.log(frase)
-//frase = frase.includes(word) //true
-
-// if (frase.includes(word)) {
-//     console.log('incluido')
-//     frase.map(element => {
-//         element.includes('palabra')
-//         console.log(element)
-//         return element
-//     })
-// }
+let search = 'palabra';
 
 function coincidencias(frase, busqueda) {
     let texto_limpio = frase.toLowerCase().replace(/[!,.-]/gi, '')
@@ -60,5 +46,5 @@ function coincidencias(frase, busqueda) {
     return resultado
 }
 
-console.log(coincidencias(frase, word))
+console.log(coincidencias(frase, search))
 
