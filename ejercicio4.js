@@ -11,3 +11,22 @@ Como hacerlo:
 
 
 */
+
+function darVuelta(texto) {
+    //david
+    let acumulador = ''
+
+
+    for (let i = texto.length - 1; i >= 0; i--) {
+        acumulador += texto[i]
+        // console.log(acumulador)
+    }
+
+    console.log(acumulador)
+
+    return acumulador
+
+}
+
+darVuelta('david')
+
