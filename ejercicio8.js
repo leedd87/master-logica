@@ -1,5 +1,5 @@
 /*
-Ejercicio 8da
+Ejercicio 8
 Dado un numero entero, inviertelo y devuelve denuevo el entero
 
 Ejemplos:
