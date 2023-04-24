@@ -17,9 +17,12 @@ Como hacerlo:
 let escalon = '[-]'
 
 
+const escalera = (escalones) => {
 
-for (let i = 1; i <= 4; i++) {
-    console.log(escalon.repeat(i))
+    for (let i = 1; i <= escalones; i++) {
+        console.log(escalon.repeat(i))
+    }
 }
 
+escalera(10)
 
