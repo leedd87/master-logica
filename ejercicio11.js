@@ -1,5 +1,5 @@
 /*
-Ejercicio 10
+Ejercicio 11
 Dado un texto y una busqueda, censurar todas las coincidencias de la busqueda en el textoi con [-CENSURADO-]
 
 Si el texto y la busqueda estan vacios mostrar
