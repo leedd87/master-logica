@@ -16,3 +16,18 @@ hastaCero(100) // Devuelve:
 Como hacerlo:
 
 */
+function hastaCero(numero) {
+
+    let resultado = '--- Del 100 al 0 ---\n'
+
+    while (numero > 0) {
+        resultado += `- n ${numero} \n`
+        numero = numero - 8
+    }
+
+    resultado += '--- FIN ----'
+
+    return resultado
+}
+
+console.log(hastaCero(100))
