@@ -15,3 +15,4 @@ Como hacerlo:
 */
 
 let array = [7, 8, 9, 10]
+console.log(array)
