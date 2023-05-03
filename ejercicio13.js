@@ -14,5 +14,17 @@ Como hacerlo:
 
 */
 
-let array = [7, 8, 9, 10]
+let array = [7, 8, 9, 10, 11]
 console.log(array)
+
+let finalArray = []
+
+let numeroDivisor = 2
+
+for (let i = 0; i < array.length; i = i + numeroDivisor) {
+
+    let subArray = array.slice(i, i + numeroDivisor)
+    finalArray.push(subArray)
+}
+
+console.log(finalArray)
