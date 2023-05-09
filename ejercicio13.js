@@ -15,7 +15,7 @@ Como hacerlo:
 */
 
 let array = [7, 8, 9, 10, 11]
-console.log(array)
+
 
 let finalArray = []
 
