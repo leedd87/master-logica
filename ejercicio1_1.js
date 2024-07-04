@@ -26,6 +26,7 @@ const tablaDeMultiplicar = (numero) => {
 
   for (let index = 1; index <= 10; index++) {
     const multiplicacion = numero * index;
+    //concatena
     resultado += `${index} x ${numero} = ${multiplicacion} \n`;
   }
   return resultado;
