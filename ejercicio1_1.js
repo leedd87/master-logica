@@ -21,14 +21,13 @@ Como hacerlo:
 
 */
 
-function tablaMultiplicar(numero) {
-  let resultado = '# Tabla del 5 # \n';
-  for (let i = 1; i <= 10; i++) {
-    let multiplicacion = i * numero;
-    //console.log(`${i} x ${numero} = ${resultado}`)
-    resultado += `${i} x ${numero} = ${multiplicacion}\n`;
+const multiplicar = (numero) => {
+  console.log(`#Tabla del ${numero} #`);
+  for (let index = 1; index <= 10; index++) {
+    const resultado = numero * index;
+    const string_resultado = `${index} x ${numero} = ${resultado}`;
+    console.log(string_resultado);
   }
-  return resultado;
-}
+};
 
-console.log(tablaMultiplicar(5));
+multiplicar(10);
